@@ -202,3 +202,15 @@ body {
     }
   }
 }
+
+.email {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #000;
+  z-index: 999;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+
+}

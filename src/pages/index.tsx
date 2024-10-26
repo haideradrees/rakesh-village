@@ -31,6 +31,7 @@ export default function Index() {
                     <div className="arrow"></div>
                 </div>
             </div>
+            <div className="email"> arslan.hameed13@gmail.com</div>
         </div>
     );
 }
