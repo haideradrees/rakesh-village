@@ -1,16 +1,20 @@
 import React, { useEffect, useState, useRef } from "react";
 
 export default function CategorySlider() {
+    const audioRef = useRef<HTMLAudioElement | null>(null);
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(null);
 
     const togglePlayPause = () => {
-        if (isPlaying) {
-            audioRef.current.pause();
-        } else {
-            audioRef.current.play();
+        if (audioRef.current) {
+            if (isPlaying) {
+                audioRef.current.pause();
+            } else {
+                audioRef.current.play().catch((error) => {
+                    console.error('Error playing audio:', error);
+                });
+            }
+            setIsPlaying(!isPlaying);
         }
-        setIsPlaying(!isPlaying);
     };
     return (
         <div>
