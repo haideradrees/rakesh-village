@@ -214,3 +214,31 @@ body {
   font-family: "Poppins", sans-serif;
 
 }
+
+.music-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.play-pause-button {
+  background-color: #6528EA;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  transition: background-color 0.3s ease;
+
+  img {
+    height: 30px;
+  }
+}
+
+.play-pause-button:hover {
+  background-color: #4a20b0;
+}

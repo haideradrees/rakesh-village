@@ -1,6 +1,7 @@
-import React from 'react'
+import { useState, useRef } from 'react';
 import { Carousel, Dropdown, Nav, Navbar, NavDropdown, } from 'react-bootstrap';
 import Image from 'next/image';
+import BackgroundMusicPlayer from '@/components/BackgroundMusicPlayer';
 
 export default function Index() {
 
@@ -31,6 +32,7 @@ export default function Index() {
                     <div className="arrow"></div>
                 </div>
             </div>
+            <BackgroundMusicPlayer />
         </div>
     );
 }
