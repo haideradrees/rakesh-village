@@ -11,11 +11,11 @@ export default function Index() {
                 <video autoPlay loop muted>
                     <source src="/video.mp4" type="video/mp4" />
                 </video>
-                <a className="pulseWrapper1" href="https://home.rakeshvillage.fun/" target='_blank'>
+                <a className="pulseWrapper1" target='_blank'>
                     <div className="fixedCircle"></div>
                     <div className="pulseLoader"></div>
                 </a>
-                <a className="pulseWrapper2" href="https://home.rakeshvillage.fun/" target='_blank'>
+                <a className="pulseWrapper2" target='_blank'>
                     <div className="fixedCircle"></div>
                     <div className="pulseLoader"></div>
                 </a>
